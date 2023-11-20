@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+    <style>
+        /*Posso simplificar as configurações de borda e contorno usando SHORTHAND, seguindo a ordem -- width style color, exemplor border: 10px solid black
+        */
+
+
+        h1 { /* box-level */
+            background-color: lightgray;
+            width: 300px; 
+            height: 300px;                                    
+            border: 10px solid darkslategrey;
+            padding: 10px 10px 10px 10px; /* Quando temos essa situação de todos os valores iguais, podemos apenas colocar um valor, que todos os outros seguirá*/
+            margin: 20px 20px 40px 20px;
+            outline: 5px dashed salmon;
+
+
+            /*Todas as configurações acima foram simplificadas usando SHORTHAND*/
+
+            }
+
+        a { /* inline- level */
+            
+            border: 10px solid red;
+            padding: 10px 10px 10px 10px; /* Quando temos essa situação de todos os valores iguais, podemos apenas colocar um valor, que todos os outros seguirá*/
+
+            /*Todas as configurações acima foram simplificadas usando SHORTHAND*/
+            
+        } 
+      
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box level, mais os<a href="#"> links são exemplos de de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+</body>
+</html>

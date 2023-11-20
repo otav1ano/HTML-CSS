@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* em HTML  é id = em CSS é #  OBS : SÓ PODE USAR EM UM ELEMENTO.
+    em HTML é class = em CSS é . (um ponto) OBS: PODE USAR VARIOS ELEMENTOS */
+
+body {
+    background-color: rgba(0, 128, 0, 0.534);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    
+}
+
+h1 {
+    color: greenyellow;
+}
+
+h2 {
+    color: rgb(3, 22, 5);
+}
+
+h1#principal {
+    background-color: black;
+    text-align: center;
+    border-radius: 100px;
+    
+}
+
+.basico {
+    background-color: rgb(0, 255, 55);
+
+}
+
+.intermediario {
+    background-color: rgba(18, 20, 3, 0.342);
+
+}
+
+.avancado {
+    background-color: rgba(165, 42, 42, 0.555);
+
+}
+
+.aprendendo {
+    background-color: black;
+    text-align: right;
+}
+
