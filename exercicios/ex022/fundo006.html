@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+    <style>
+        /*Nesse exercicios estamos trabalhando com o background-size e seus valores cover e contain,  
+        
+        background-size: cover; - Esta propriedade redimensiona a imagem de fundo para preencher completamente a área do elemento, mantendo sua proporção original. Se a proporção da imagem de fundo não corresponder à proporção do elemento, a imagem será cortada para preencher a área.
+
+        background-size: contain; - Esta propriedade redimensiona a imagem de fundo para que ela seja completamente visível dentro da área do elemento, mantendo sua proporção original. Se a proporção da imagem de fundo não corresponder à proporção do elemento, haverá espaço vazio (transparente) à volta da imagem.
+        
+        Em resumo, a diferença entre cover e contain é como a imagem de fundo é ajustada para preencher a área do elemento. O cover corta a imagem para garantir que ela preencha toda a área, enquanto o contain mantém a imagem inteira visível, adicionando espaço vazio em torno dela se necessário.
+        */
+        body {
+            height: 100vh;
+            /*background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size:  cover; 
+            background-attachment: fixed; */
+            
+            /*Obs01: acrescentamos uma nova propriedade ao nosso exercicio, o background-attachment: fixed; a mesma torna a imagem de fundo fixa, já o background-attachment: scroll; permite que a imagem de  fundo rolavel, o que significa que ela se move conforme você rola a página*/
+
+            /*Obs02: podemos simplificar nossa estilização usando o shorthand
+            nessa ordem - background: color> image > position > size > attachment
+            
+            porem conforme o W3C o size que estar no shorthand funciona, mais ao testar em varios navegador ele nao ta funcionando, entao temos que eliminar ele do nosso shorthand e estilizar ele aparte.*/
+
+            background: black url('imagens/wallpaper002.jpg') center center fixed; /*Nossa shorthand simplicando nossas estelização fica dessa forma.*/
+            background-size: cover; 
+
+
+        }
+        main {
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magnam facilis quaerat unde, quam perspiciatis eos nemo tempore, totam ullam suscipit assumenda dolore reprehenderit enim corporis in eum, maxime aliquam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magnam facilis quaerat unde, quam perspiciatis eos nemo tempore, totam ullam suscipit assumenda dolore reprehenderit enim corporis in eum, maxime aliquam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magnam facilis quaerat unde, quam perspiciatis eos nemo tempore, totam ullam suscipit assumenda dolore reprehenderit enim corporis in eum, maxime aliquam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magnam facilis quaerat unde, quam perspiciatis eos nemo tempore, totam ullam suscipit assumenda dolore reprehenderit enim corporis in eum, maxime aliquam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magnam facilis quaerat unde, quam perspiciatis eos nemo tempore, totam ullam suscipit assumenda dolore reprehenderit enim corporis in eum, maxime aliquam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magnam facilis quaerat unde, quam perspiciatis eos nemo tempore, totam ullam suscipit assumenda dolore reprehenderit enim corporis in eum, maxime aliquam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magnam facilis quaerat unde, quam perspiciatis eos nemo tempore, totam ullam suscipit assumenda dolore reprehenderit enim corporis in eum, maxime aliquam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magnam facilis quaerat unde, quam perspiciatis eos nemo tempore, totam ullam suscipit assumenda dolore reprehenderit enim corporis in eum, maxime aliquam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magnam facilis quaerat unde, quam perspiciatis eos nemo tempore, totam ullam suscipit assumenda dolore reprehenderit enim corporis in eum, maxime aliquam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magnam facilis quaerat unde, quam perspiciatis eos nemo tempore, totam ullam suscipit assumenda dolore reprehenderit enim corporis in eum, maxime aliquam.</p>
+
+    </main>
+</body>
+</html>
