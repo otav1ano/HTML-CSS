@@ -7,7 +7,14 @@
     <style>
         body {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
         }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+           /*Efeito zebrado usando a propriedade nth-child*/
+        }
+
         td, th{
             border: 1px solid black;
             padding: 10px;
@@ -24,9 +31,7 @@
 
         }
 
-        td.num {
-            text-align: right;
-        }
+      
         thead, tfoot {
             font-weight: bold;
         }
@@ -41,7 +46,10 @@
             background-color: lightgray;
 
         }
-       
+
+        
+
+        
     </style>
 </head>
 <body>
@@ -61,12 +69,12 @@
         <caption>População das Unidades Federativas</caption> 
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
-            <tr class="color">
+            <tr>
                 <td>São Paulo</td>
                 <td class="num">44.411.238</td>
             </tr>
@@ -74,7 +82,7 @@
                 <td>Minas Gerais</td>
                 <td class="num">20.538.718</td>
             </tr>
-            <tr class="color">
+            <tr>
                <td>Rio de Janeiro</td>
                <td class="num">16.054.524</td>
             </tr>
@@ -83,7 +91,7 @@
                 <td class="num">14.141.626</td>
                 
             </tr>
-            <tr class="color">
+            <t>
                 <td>Paraná</td>
                 <td class="num">11.444.380</td>
             </tr>
@@ -92,7 +100,7 @@
                 <td class="num"> 10.882.965</td>
 
             </tr>
-            <tr class="color">
+            <tr>
                 <td>Pernambuco</td>
                 <td class="num">9.058.931</td>
             </tr>
@@ -100,7 +108,7 @@
                 <td>Ceará</td>
                 <td class="num">8.794.957</td>
             </tr>
-            <tr class="color">
+            <tr>
                 <td>Pará</td>
                 <td class="num">8.121.025</td>
             </tr>
@@ -108,7 +116,7 @@
                 <td>Santa Catarina</td>
                 <td class="num">7.610.361</td>
             </tr>
-            <tr class="color">
+            <tr>
                <td>Goiás</td>
                <td class="num">7.056.495</td>
             </tr>
@@ -116,7 +124,7 @@
                 <td>Maranhão</td>
                 <td class="num">6.775.805</td>
             </tr>
-            <tr class="color">
+            <tr>
                 <td>Paraíba</td>
                 <td class="num">3.974.687</td>
                
@@ -125,7 +133,7 @@
                 <td> Amazonas</td>
                 <td class="num">3.941.613</td>
             </tr>
-            <tr class="color">
+            <tr>
                 <td>Espírito Santo</td>
                 <td class="num">3.833.712</td>
             </tr>
@@ -133,7 +141,7 @@
                 <td>Mato Grosso</td>
                 <td class="num">3.658.649</td>
             </tr>
-            <tr class="color">
+            <tr>
                 <td>Rio Grande do Norte</td>
                 <td class="num">3.302.729</td>
 
@@ -142,7 +150,7 @@
                 <td> Piauí</td>
                 <td class="num">3.272.199</td>
             </tr>
-            <tr class="color">
+            <tr>
                 <td> Alagoas</td>
                 <td class="num">3.127.683</td>
             </tr>
@@ -150,7 +158,7 @@
                 <td>Distrito Federal</td>
                 <td class="num">2.817.381</td>
             </tr>
-            <tr class="color">
+            <tr>
                 <td> Mato Grosso do Sul</td>
                 <td class="num">2.757.013</td>
             </tr>
@@ -158,7 +166,7 @@
                 <td>Sergipe</td>
                 <td class="num">2.209.558</td>
             </tr>
-            <tr class="color">
+            <tr>
                 <td>Rondônia</td>
                 <td class="num">1.581.196</td>
             </tr>
@@ -166,7 +174,7 @@
                 <td>Tocantins</td>
                 <td class="num">1.511.460</td>
             </tr>
-            <tr class="color">
+            <tr>
                 <td> Acre</td>
                 <td class="num">830.018</td>
             </tr>
@@ -174,13 +182,13 @@
                 <td> Amapá</td>
                 <td class="num">733.759</td>
             </tr>
-            <tr class="color">
+            <tr>
                 <td> Roraima</td>
                 <td class="num">636.707</td>
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num">203.079.389</td>
             
         </tfoot>
