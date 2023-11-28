@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!--PARA CRIAR NOSSO FORMULÁRIO BÁSICO, USAMOS A TAG <FORM>, DENTRO DA TAG TEREMOS PARAGRAFOS, LABEL E NOSSO INPUT DO TYPE="TEXT", CONTENDO NAME="" MAIS ASSOCIADO PARA PHP, E ID="" MAIS ASSOCIADO PARA JAVASCRIPT, PARA CRIAR NOSSO BOTÃO DE ENVIAR USAMOS INPUT TYPE="SUBMIT" VALUE="ENVIAR"-->
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" autocomplete="off" method=" get">
+        <p><label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p> 
+    </form>
+    <!--POR PADRÃO O METHAD = "GET" É INSERIDO NO NOSSO FORMULÁRIO ONDE OS DADOS DO NOSSO FORMULÁRIO VEM JUNTO A URL, SE QUISERMOS TIRAR ISSO É SÓ TROCAR O "GET" POR "POST", OBS: ISSO NÃO SIGNIFICA QUE OS DADOS ESTÃO SEGUROS, SÓ NÃO VAI APARECER COMO PARTE NA URL, PORÉM FAZENDO UMA VARREDURA, CONSIGUIMOS IDENTIFICAR OS DADOS-->
+
+    <!--GET: Os parâmetros são visíveis na URL, o que significa que são exibidos na barra de endereços do navegador. Não é apropriado para o envio de informações sensíveis, como senhas.
+
+    POST: Os parâmetros são enviados no corpo da solicitação, não visíveis na URL. Isso oferece uma camada adicional de segurança e é mais apropriado para o envio de dados sensíveis.-->
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="off">
+
+        <!--Nesse exemplo aprendemos algumas propriedades importantes para nosso formulário:
+        
+        requerid = essa propriedade faz com que o preenchimento seja obrigatorio, em cada elemento que ele esteja presente.
+
+        minlength e maxlength = atribui um minimo e máximo de caracteres para cada elemento do nosso formulário, exemplo para usuários, senhas etcss..
+        
+        placeholder = atribui  orientações visuais sobre o que é esperado em cada campo.
+        -->
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="8" maxlength="15" placeholder="Nome de Usuário">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="15" placeholder="Mínimo 8 Caracteres">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="submit" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
