@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <!--Nesse exemplo de formulário aprendemos a usar dois tipo de input o 'radio' e o 'checkbox'
+            
+            input type="radio" quando queremos que o usuário faça apenas uma escolha entre várias opções
+
+            input type="checkbox" permite diferente do tipo 'radio' o 'checkbox' permite que o usuário escolha mais de uma opção dentre várias opções.
+
+            usamos também um 'checked' dentro de alguns input para marcar como padrão alguma opção dentre as demais. Ou seja, por padrão ao carregar o formulário terá algumas opções ja marcada.
+
+            obs: dentro de nosso input de type 'radio' é importante que o name="" seja igual para todas as opções para não termos problemas, do tipo marcar mais de uma opção e não conseguir desmarcar.
+        -->
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M" checked> <label for="isxmas"> Masculino</label><br>
+            <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem"> Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete </label><br>
+            <input type="checkbox" name="esfut" id="iesfut" checked><label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação</label><br>
+            <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
