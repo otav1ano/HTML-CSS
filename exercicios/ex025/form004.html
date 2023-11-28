@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="GET" autocomplete="on">
 
-        <p>
-            <label for="inome">Nome</label>
-            <input type="text" name="nome" id="inome" minlength="5" maxlength="30" required placeholder="Digite seu nome completo">
-        </p>
-        <p>
-
-            <label for="iemail">Email</label>
-            <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="Digite seu e-mail">
-
-
-        </p>
-
-        <p>
-            <label for="itel">Telefone</label>
-            <input type="tel" name="tel" id="itel" autocomplete="tel" required placeholder="(xx)xxxx-xxxx" pattern="^\(\d{2}\)\{4,5}-\d{4}$">
-        </p>
+        <fieldset>
+            <legend>Preencha o formulário</legend>
+            <!--A tag <fieldset> em HTML é utilizada para agrupar elementos relacionados em um formulário e criar uma caixa de contorno visual ao redor desse grupo. Normalmente, é combinada com a tag <legend> para fornecer um título ou uma legenda para o grupo de elementos. -->
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="30" required placeholder="Digite seu nome completo">
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="Digite seu e-mail">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required placeholder="(xx)xxxx-xxxx" pattern="^\(\d{2}\)\{4,5}-\d{4}$">
+            </p>
+        </fieldset>
 
         <!--Estudar mais sobre RegEx-->
 
