@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <!--Nesse exemplo, aprendemos sobre os elementos, select, datalist, textarea:
+
+        1. O elemento <select> é utilizado para criar listas suspensas (dropdown lists). Pode conter um ou mais elementos <option>, que representam as opções da lista. Os usuários podem escolher uma opção da lista ao clicar na seta para baixo e selecionar a opção desejada.
+
+        2. O elemento <datalist> fornece uma lista de opções para outros elementos de entrada, como <input>. Permite que os usuários escolham entre as opções fornecidas enquanto ainda têm a flexibilidade de digitar livremente. Usado em conjunto com o atributo list em elementos <input>.
+        
+        3. O elemento <textarea> é utilizado para criar áreas de texto expansíveis, onde os usuários podem inserir texto livremente. É geralmente usado para entradas de texto mais longas, como comentários ou mensagens. Pode incluir atributos como rows e cols para definir o número de linhas e colunas visíveis inicialmente.
+    
+    
+    
+    -->
+    <form action="cadastro.php" method="post" autocomplete="on"> 
+
+        <label for="iest">Estado:</label>
+        <select name="estado" id="iest">
+
+            <option value="">---Escolha---</option>
+            <optgroup label="Região Sudeste">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+            <optgroup label="Região Nordeste">
+                <option value="MA">Maranhão</option>
+                <option value="PE">Pernambuco</option>
+                <option value="RN">Rio Grande do Norte</option>
+
+            </optgroup>
+        <!--A utilização de <optgroup> ajuda a melhorar a organização e a compreensão das opções em casos onde há categorias ou temas diferentes. Isso é especialmente útil em listas suspensas que contêm muitas opções, tornando mais fácil para os usuários encontrarem a opção desejada.-->
+        </select>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Contador</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>

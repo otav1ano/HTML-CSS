@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <!--O elemento <output> em HTML é utilizado dentro de um formulário para exibir o resultado de uma operação ou cálculo realizado com base nas entradas fornecidas pelo usuário. Ele funciona como uma área de saída na qual você pode exibir informações calculadas dinamicamente. O elemento <output> é especialmente útil quando se lida com scripts ou funcionalidades interativas em formulários.
+        
+    O evento 'oninput' no formulário é acionado sempre que o valor de entrada é alterado, permitindo a atualização dinâmica da saída.
+    
+    -->
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="in1">Número 1:</label>
+            <input type="number" name="n1" id="in1" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="in2">Número 1:</label>
+            <input type="number" name="n2" id="in2" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
